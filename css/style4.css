@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+body {
+    margin: 0;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(2,61,73,1) 100%);
+    background-size: 100% 100%;
+}
+h1{
+    margin-left: 5%;
+    margin-top: 25px;
+    font-size: 50pt;
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    width: 100vw;
+    justify-content: space-around;
+    color:azure;
+}
+.headr{
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 6px dotted rgb(46, 13, 164);
+    width: 1300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 18pt;
+    font-family: 'Oswald', sans-serif;
+    color:azure;
+}
+.headr2{
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 6px dotted rgb(46, 13, 164);
+    width: 1100px;
+    height: auto;
+    display: flex;
+    position: relative;
+    font-size: 18pt;
+    font-family: 'Oswald', sans-serif;
+    color:azure;
+}
+.headr3{
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 6px dotted rgb(46, 13, 164);
+    width: 1300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 18pt;
+    font-family: 'Oswald', sans-serif;
+    color: azure;
+}
+.img1{
+    position: relative;
+    float: right;
+    display: flex;
+    margin-right: 3%;
+}
+.img1:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.5s;
+}
+.headr:hover{
+    cursor: pointer;
+    transform: scale(1.05,1.05);
+    transition: 0.3s;
+}
+.headr2:hover{
+    cursor: pointer;
+    transform: scale(1.05,1.05);
+    transition: 0.3s;
+}
+.headr3:hover{
+    cursor: pointer;
+    transform: scale(1.05,1.05);
+    transition: 0.3s;
+}
+h2{
+    position: relative;
+    margin-left: 5%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22pt;
+    color: azure;
+}
+.con{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    height: 140px;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #a5c8d6, #7885ce);
+    border-radius: 20px;
+    align-items: center;
+}
+a:active,
+a:hover,
+a{
+    font-size: 18pt;
+    position: relative;
+    top: 0px;
+    padding-top: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    transition: 0.5s;
+    color: azure;
+}
+.lty{
+    visibility: hidden;
+    width: 80vw;
+    height: 140px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    position: absolute;
+}
+a:hover{
+    font-size: 19pt;
+    top: -10px;
+    z-index: 4;
+}
+a:hover~.lty{
+    visibility: visible;
+    z-index: 3;
+}
+.fs{
+    padding-left: 5%;
+}
+.ls{
+    padding-right: 5%;
+}
+.back{
+    background: linear-gradient(60deg, rgb(49, 42, 60), rgb(68, 67, 67));
+    z-index: 1;
+    width: 100%;
+    height: 140px;
+}
+@media screen and (max-width: 1448px){
+    .pg1{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .headr{
+        width:auto;
+        height: auto;
+    }
+    .pg2{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .headr2{
+        width:auto;
+        height: auto;
+    }
+    .headr3{
+        width:auto;
+        height: auto;
+    }
+    .img1{
+        float:none;
+        margin-left: 42vw;
+        margin-right: 42vw;
+        width: 16vw;
+        height: 16vw;
+    }
+    .con{
+        z-index: 2;
+        margin-left: 5%;
+        margin-right: 5%;
+        width:auto;
+        height: 140px;
+    }
+    .lty{
+        width: auto;
+    }
+    .back{
+        height: 140px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .img1{
+        margin-left: 38vw;
+        margin-right: 38vw;
+        width: 24vw;
+        height: 24vw;
+    }
+}
+@media screen and (max-width: 500px){
+    .con{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .fs{
+        padding-left: 0;
+    }
+    .ls{
+        padding-right: 0;
+    }
+    .lty{
+        height: auto;
+    }
+    .back{
+        height: auto;
+    }
+    .img1{
+        margin-left: 28vw;
+        margin-right: 28vw;
+        width: 44vw;
+        height: 44vw;
+    }
+}
+@media screen and (min-width: 1600px){
+    .img1{
+        height: 250px;
+        width: 250px;
+        margin-right: 1%;
+    }
+    .headr{
+        height: auto;
+        width: auto;
+        font-size: 20pt;
+    }
+    .headr2{
+        height: auto;
+        width: auto;
+        margin-right: 5%;
+        font-size: 20pt;
+    }
+    .headr3{
+        width:auto;
+        height: auto;
+        font-size: 20pt;
+    }
+    a{
+        font-size: 20pt;
+    }
+    a:hover{
+        font-size: 21pt;
+    }
+    h2{
+        font-size: 24pt;
+    }
+}
+@media screen and (min-width: 1820px){
+    .con{
+        height: 200px;
+    }
+    .back{
+        height: 200px;
+    }
+}
